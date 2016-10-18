@@ -1,0 +1,4 @@
+var bill= prompt('What is your bill?')
+
+amtdue= Number(bill) * .20;
+console.log("Your total amout due is: " + "$" bill + amtdue);
