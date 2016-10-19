@@ -1,4 +1,11 @@
-var bill= prompt('What is your bill?')
+var bill= Number(prompt('What is your bill?'))
 
-amtdue= Number(bill) * .20;
-console.log("Your total amout due is: " + "$" bill + amtdue);
+function gratuity(bill) {
+return bill * .20;
+}
+
+function total_amt(bill){
+  return bill + gratuity(bill);
+}
+
+console.log('Total with Gratuity: $' + total_amt(bill));
